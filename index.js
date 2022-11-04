@@ -11,9 +11,9 @@ let content = '';
 
 global.document = new JSDOM(content).window.document;
 
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern');
+const Manager = require('./app/lib/Manager');
+const Engineer = require('./app/lib/Engineer');
+const Intern = require('./app/lib/Intern');
 
 (async () => {
 	const managerData = await inq.prompt([
@@ -241,7 +241,7 @@ ${customHTML.innerHTML}
 		</body>
 	
 	</html>`;
-	fs.writeFile('dist/index.html', content, (err) => {
+	fs.writeFile('./app/dist/index.html', content, (err) => {
 		if (err) {
 			console.error(err);
 		}
