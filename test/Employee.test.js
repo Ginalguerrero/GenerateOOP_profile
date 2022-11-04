@@ -1,9 +1,10 @@
-const Employee = required('../lib/Employee');
+const Employee = require('../lib/Employee');
+// import Employee from '../lib/Employee';
 
 describe('Validate Employee', () => {
-    const employe = new Employee();
+	const employe = new Employee();
 
-    Test('defines getRole()',() => {
-        expect(typeof employe.getRole).toBe('function');
-    });
+	test('defines getRole()', () => {
+		expect(typeof employe.getRole).toBe('function');
+	});
 });

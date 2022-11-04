@@ -1,9 +1,11 @@
-const Manager = required('../lib/Employer');
+const Manager = require('../lib/Manager');
+
+// import Manager from '../lib/Manager';
 
 describe('Validate Manager', () => {
-    const manager = new Manager();
+	const manager = new Manager();
 
-    Test('defines getRole()',() => {
-        expect(typeof employe.getRole).toBe('function');
-    });
+	test('defines getRole()', () => {
+		expect(typeof manager.getRole).toBe('function');
+	});
 });
