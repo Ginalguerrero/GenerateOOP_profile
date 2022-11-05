@@ -233,7 +233,7 @@ const Intern = require('./app/lib/Intern');
 		</head>
 	
 		<body>
-			<h1>Employee Management</h1>
+			<h1>My Team</h1>
 			<section class="container">
 	
 ${customHTML.innerHTML}
